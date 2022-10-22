@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+
+<body>
+    <form #CreateAccount="ngForm" (ngSubmit)="createAccount()">
+        <div class="form-group">
+            <label for="exampleInputName">First Name</label>
+            <input type="text" class="form-control" name="registerFirstName" aria-describedby="emailHelp"
+                placeholder="Enter FirsrName" [(ngModel)]="user.first_name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputLastName">Middle Name</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Enter Middle Name"
+                [(ngModel)]="user.middle_name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputLastName">Last Name</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Enter Last Name"
+                [(ngModel)]="user.last_name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputLastName">Father Name</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Enter Father Name"
+                [(ngModel)]="user.father_name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputLastName">Mobile No</label>
+            <input type="number" class="form-control" name="RegisterLastName" placeholder="Enter Mobile No"
+                [(ngModel)]="user.mb_no" required>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">Email</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Enter Email"
+                [(ngModel)]="user.email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">Aadhar No</label>
+            <input type="number" class="form-control" name="RegisterLastName" placeholder="Enter Aadhar No"
+                [(ngModel)]="user.adhar" required>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">DOB</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Enter Date of Birth"
+                [(ngModel)]="user.dateob">
+        </div>
+
+        <!-- ******************** -->
+
+        <div class="form-group">
+            <label for="exampleInputLastName">Line 1</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Current Address Line 1"
+                [(ngModel)]="user.r_address_line_1">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">Line 2</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Current Address Line 2"
+                [(ngModel)]="user.r_address_line_2">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">landMark</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Current Address LandMark"
+                [(ngModel)]="user.r_landmark">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">State</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Enter State"
+                [(ngModel)]="user.r_state">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">City</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Enter City"
+                [(ngModel)]="user.r_city">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">Pincode</label>
+            <input type="number" class="form-control" name="RegisterLastName" placeholder="Enter Pincode"
+                [(ngModel)]="user.r_pincode">
+        </div>
+
+        <!-- ************************* -->
+        <div class="form-group">
+            <label for="exampleInputLastName">Line 1</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Permanent Address Line 1"
+                [(ngModel)]="user.p_address_line_1">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">Line 2</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Permanent Address Line 2"
+                [(ngModel)]="user.p_address_line_2">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">landMark</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Permanent Address LandMark"
+                [(ngModel)]="user.p_landmark">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">State</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Enter State"
+                [(ngModel)]="user.p_state">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">City</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Enter City"
+                [(ngModel)]="user.p_city">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">Pincode</label>
+            <input type="number" class="form-control" name="RegisterLastName" placeholder="Enter Pincode"
+                [(ngModel)]="user.p_pincode">
+        </div>
+
+        <!-- ******************* -->
+
+        <div class="form-group">
+            <label for="exampleInputLastName">Occupation</label>
+            <input type="text" class="form-control" name="RegisterLastName" placeholder="Enter Occupation"
+                [(ngModel)]="user.occupation_type">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">Account No</label>
+            <input type="number" class="form-control" name="RegisterLastName" placeholder=""
+                [(ngModel)]="user.account_no" readonly required>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputLastName">Balance</label>
+            <input type="number" class="form-control" name="RegisterLastName" placeholder="Min Balance"
+                [(ngModel)]="user.balance">
+        </div>
+        <button type="submit" class="btn btn-info">Create Account</button>
+
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<app-header></app-header>
+
+<h1>User List</h1>
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Id</th>
+            <th> Address</th>
+            <th>Govt ID</th>
+            <th>Phone Number</th>
+            <th>Date Of Birth</th>
+            <th>Password</th>
+            <th>Status</th>
+            <th>Approval</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let user of user">
+            <td>{{user.id}}</td>
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.emailID}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.govtId}}</td>
+            <td>{{user.phoneNumber}}</td>
+            <td>{{user.dob}}</td>
+            <td>{{user.password}}</td>
+            <td>{{user.status}}</td>
+            <td><button (click)="ApproveStatus(user.id)">Accept</button></td>
+            <td><button (click)="rejectStatus(user.id)">Reject</button></td>
+            <td> <button><a [routerLink]="['/update/',user.id]">Update</a> </button></td>
+            <td><button (click)="deleteUser(user.id)">Delete</button></td>
+        </tr>
+    </tbody>
+
+
+
+</table>
